@@ -42,3 +42,7 @@ Good software is honest software. I believe in understanding systems from the gr
 ---
 
 *All projects here were built in collaboration with Claude AI. The prompts, direction, and judgment are mine — Claude handles a lot of the heavy lifting.*
+
+<style>
+.site-footer-credits, footer { display: none !important; }
+</style>
