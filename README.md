@@ -13,7 +13,7 @@ This is my playground for testing and sharing **Claude AI creations** — a spac
 ## 🚀 Projects
 
 | Project | Description |
-|--------|-------------|
+|:--------|:-------------|
 | [**One Instruction Set Computer**](https://github.com/prichards14/prdev-oisc) | A simulator for a minimal OISC architecture — one instruction to rule them all |
 | [**Chromata**](https://github.com/prichards14/prdev-chromata) | An OKLCH-first color palette generator with harmony modes and live preview |
 | [**Fractal Landscape**](https://github.com/prichards14/prdev-fractal-landscape) | A React server-driven fractal terrain generator |
@@ -42,7 +42,3 @@ Good software is honest software. I believe in understanding systems from the gr
 ---
 
 *All projects here were built in collaboration with Claude AI. The prompts, direction, and judgment are mine — Claude handles a lot of the heavy lifting.*
-
-<style>
-.site-footer-credits, footer { display: none !important; }
-</style>
