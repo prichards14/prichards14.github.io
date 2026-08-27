@@ -18,6 +18,7 @@ This is my playground for testing and sharing **Claude AI creations** — a spac
 | [**Chromata**](https://github.com/prichards14/prdev-chromata) | An OKLCH-first color palette generator with harmony modes and live preview |
 | [**Fractal Landscape**](https://github.com/prichards14/prdev-fractal-landscape) | A React server-driven fractal terrain generator |
 | [**Fractals**](https://github.com/prichards14/prdev-fractals) | Classic fractal generation as a self-contained SPA |
+| [**StyleDraft**](https://github.com/prichards14/pr-styledraft) | Interactive style configurator for websites |
 
 ---
 
