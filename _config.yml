@@ -1,5 +1,11 @@
-remote_theme: pages-themes/architect@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-title: [prichards14]
-description: [Just showing off...]
+# GitHub Pages Site Configuration
+title: "Patrick Richards | AI-Accelerated Systems & Full Stack Engineering"
+description: "Portfolio of interactive web applications, 3D engines, emulators, and creative tooling prompted with Claude and Gemini. 30 years systems & full stack experience."
+url: "https://prichards14.github.io"
+baseurl: ""
+github_username: prichards14
+
+# Exclude unnecessary files from GitHub Pages build
+exclude:
+  - "Resume - Patrick Richards.pdf"
+  - README.md
