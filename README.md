@@ -14,6 +14,7 @@ This is my playground for testing and sharing **Claude AI creations** — a spac
 
 | Project | Description |
 |:--------|:-------------|
+| [**Commodore 64 Sprite Studio**](https://github.com/prichards14/prdev-oisc) | An app that runs in any browser for editing Commodore 64 sprites |
 | [**One Instruction Set Computer**](https://github.com/prichards14/prdev-oisc) | A simulator for a minimal OISC architecture — one instruction to rule them all |
 | [**Chromata**](https://github.com/prichards14/prdev-chromata) | An OKLCH-first color palette generator with harmony modes and live preview |
 | [**Fractal Landscape**](https://github.com/prichards14/prdev-fractal-landscape) | A React server-driven fractal terrain generator |
