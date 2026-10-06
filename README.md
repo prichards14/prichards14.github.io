@@ -6,7 +6,7 @@ Full Stack web developer with **29+ years of continuous industry experience** �
 
 ## 🧪 What This Is
 
-This is my playground for testing and sharing **Claude AI creations** — a space where I explore what's possible when you combine decades of development experience with a capable AI collaborator. Projects here span a wide range, from compact single-page apps to more ambitious interactive tools.
+This is my playground for testing and sharing **Google and Claude AI creations** — a space where I explore what's possible when you combine decades of development experience with a capable AI collaborator. Projects here span a wide range, from compact single-page apps to more ambitious interactive tools.
 
 ---
 
