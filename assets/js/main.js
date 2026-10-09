@@ -4,12 +4,81 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initProjectFiltering();
   initSubleqWidget();
   initChromataWidget();
   initTimerWidget();
   initProjectModal();
 });
+
+/* ==========================================================================
+   0. Theme Management (Light / Dark Appearance Toggle)
+   ========================================================================== */
+const THEME_STORAGE_KEY = 'theme-appearance';
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const metaScheme = document.querySelector('meta[name="color-scheme"]');
+  if (metaScheme) metaScheme.setAttribute('content', theme);
+
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', theme === 'dark' ? '#000000' : '#ffffff');
+  }
+
+  const lightBtn = document.getElementById('theme-btn-light');
+  const darkBtn = document.getElementById('theme-btn-dark');
+
+  if (lightBtn && darkBtn) {
+    if (theme === 'light') {
+      lightBtn.classList.add('active');
+      lightBtn.setAttribute('aria-pressed', 'true');
+      darkBtn.classList.remove('active');
+      darkBtn.setAttribute('aria-pressed', 'false');
+    } else {
+      darkBtn.classList.add('active');
+      darkBtn.setAttribute('aria-pressed', 'true');
+      lightBtn.classList.remove('active');
+      lightBtn.setAttribute('aria-pressed', 'false');
+    }
+  }
+
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch (e) {
+    // Gracefully handle storage disabled/blocked
+  }
+}
+
+function initThemeToggle() {
+  let activeTheme = 'light'; // Default to Light on load!
+  try {
+    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    if (saved === 'dark' || saved === 'light') {
+      activeTheme = saved;
+    }
+  } catch (e) {}
+
+  applyTheme(activeTheme);
+
+  const lightBtn = document.getElementById('theme-btn-light');
+  const darkBtn = document.getElementById('theme-btn-dark');
+
+  if (lightBtn) {
+    lightBtn.addEventListener('click', () => applyTheme('light'));
+  }
+  if (darkBtn) {
+    darkBtn.addEventListener('click', () => applyTheme('dark'));
+  }
+
+  // Cross-tab theme sync
+  window.addEventListener('storage', (e) => {
+    if (e.key === THEME_STORAGE_KEY && (e.newValue === 'light' || e.newValue === 'dark')) {
+      applyTheme(e.newValue);
+    }
+  });
+}
 
 /* ==========================================================================
    1. Project Filtering by Category
@@ -463,7 +532,7 @@ function populateModal(data) {
   if (mediaContainer) {
     if (data.image) {
       mediaContainer.style.display = 'block';
-      mediaContainer.innerHTML = `<img src="${data.image}" alt="${data.title}" style="width:100%; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);" />`;
+      mediaContainer.innerHTML = `<img src="${data.image}" alt="${data.title}" style="width:100%; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid var(--color-border); box-shadow: var(--color-media-shadow);" />`;
     } else {
       mediaContainer.style.display = 'none';
       mediaContainer.innerHTML = '';
