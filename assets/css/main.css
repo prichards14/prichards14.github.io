@@ -514,7 +514,7 @@
      Hero Section (Typography & Dynamic Ambient Glow)
      ========================================================================== */
   .hero-section {
-    padding-top: clamp(2.25rem, 1.5rem + 2.5vw, 4rem);
+    padding-top: clamp(3rem, 2rem + 3vw, 5.25rem);
     padding-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
     text-align: center;
     position: relative;
