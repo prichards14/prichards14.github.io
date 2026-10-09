@@ -153,17 +153,6 @@
         </p>
       </div>
 
-      <!-- Filter Controls -->
-      <div class="filter-wrapper">
-        <div class="filter-bar" role="tablist" aria-label="Filter projects">
-          <button class="filter-pill active" data-filter="all">All Projects (8)</button>
-          <button class="filter-pill" data-filter="claude">Claude AI</button>
-          <button class="filter-pill" data-filter="gemini">Google Gemini</button>
-          <button class="filter-pill" data-filter="graphics">3D &amp; Graphics</button>
-          <button class="filter-pill" data-filter="systems">Hardware &amp; Systems</button>
-          <button class="filter-pill" data-filter="tools">Design &amp; Tools</button>
-        </div>
-      </div>
 
       <!-- Bento Grid -->
       <div class="projects-grid">
@@ -267,8 +256,8 @@
           </div>
         </article>
 
-        <!-- ================= CARD 3: Chromata (Half Card) ================= -->
-        <article class="project-card half-card glow-purple" data-category="claude tools">
+        <!-- ================= CARD 3: Chromata (OKLCH Studio) ================= -->
+        <article class="project-card featured-card glow-purple" data-category="claude tools">
           <div>
             <div class="card-header">
               <span class="ai-badge">
@@ -286,15 +275,35 @@
             </p>
 
             <div class="prompt-callout">
-              <span class="prompt-label">The Prompt</span>
+              <span class="prompt-label">The Architectural Prompt</span>
               "Create an OKLCH-first color palette studio with perceptual uniformity, mathematical harmony algorithms, real-time UI component simulation, and clean CSS variable export."
             </div>
 
-            <!-- Live Interactive Color Swatches Demonstration -->
+            <div class="tech-pills">
+              <span class="tech-pill">OKLCH Color Space</span>
+              <span class="tech-pill">CSS Custom Properties</span>
+              <span class="tech-pill">Harmonic Math</span>
+              <span class="tech-pill">Design Systems</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://prichards14.github.io/prdev-chromata/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Launch Live App</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+              <a href="https://github.com/prichards14/prdev-chromata" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary" data-open-modal="chromata">Deep Dive</button>
+            </div>
+          </div>
+
+          <div class="card-preview-interactive">
             <div class="interactive-demo-box">
               <div class="chromata-widget">
                 <div class="chromata-selector-bar">
-                  <span id="chromata-hex" style="font-size: 0.75rem; color: var(--color-text-secondary);">Interactive OKLCH Preview</span>
+                  <span id="chromata-hex" style="font-size: 0.75rem; color: var(--color-text-secondary); font-family: var(--font-mono);">Interactive OKLCH Preview</span>
                   <select id="chromata-mode" class="oisc-btn">
                     <option value="triadic">Triadic Harmony</option>
                     <option value="complementary">Complementary</option>
@@ -305,29 +314,11 @@
                 <input type="range" id="chromata-hue-slider" min="0" max="360" value="255" style="width: 100%; accent-color: var(--accent-purple);">
               </div>
             </div>
-
-            <div class="tech-pills" style="margin-top: 1rem;">
-              <span class="tech-pill">OKLCH Color Space</span>
-              <span class="tech-pill">CSS Custom Properties</span>
-              <span class="tech-pill">Harmonic Math</span>
-              <span class="tech-pill">Design Systems</span>
-            </div>
-          </div>
-
-          <div class="card-actions">
-            <a href="https://prichards14.github.io/prdev-chromata/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <span>Launch Live App</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-            <a href="https://github.com/prichards14/prdev-chromata" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <span>GitHub</span>
-            </a>
-            <button class="btn btn-secondary" data-open-modal="chromata">Deep Dive</button>
           </div>
         </article>
 
-        <!-- ================= CARD 4: StyleDraft (Half Card) ================= -->
-        <article class="project-card half-card glow-amber" data-category="gemini claude tools">
+        <!-- ================= CARD 4: StyleDraft ================= -->
+        <article class="project-card featured-card glow-amber" data-category="gemini claude tools">
           <div>
             <div class="card-header">
               <span class="ai-badge">
@@ -345,23 +336,11 @@
             </p>
 
             <div class="prompt-callout">
-              <span class="prompt-label">The Prompt</span>
+              <span class="prompt-label">The Architectural Prompt</span>
               "Create an interactive website style drafting tool that pairs curated design guardrails and dynamic CSS variables with Google Gemini API intelligence for real-time style suggestions and clean export."
             </div>
 
-            <div class="interactive-demo-box">
-              <div style="font-size: 0.8125rem; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 6px;">
-                <div style="display: flex; justify-content: space-between;">
-                  <span style="color: var(--accent-amber);">⚡ Gemini API Integration</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.75rem;">@google/genai v2.4</span>
-                </div>
-                <div style="background: var(--btn-secondary-bg); padding: 8px 12px; border-radius: 6px; border: 1px solid var(--color-border); color: var(--color-text-primary);">
-                  Live CSS variable injection + Typographic guardrails + Motion design handoff.
-                </div>
-              </div>
-            </div>
-
-            <div class="tech-pills" style="margin-top: 1rem;">
+            <div class="tech-pills">
               <span class="tech-pill">@google/genai</span>
               <span class="tech-pill">React 19</span>
               <span class="tech-pill">Tailwind CSS v4</span>
@@ -369,22 +348,41 @@
               <span class="tech-pill">TypeScript</span>
               <span class="tech-pill">Vite</span>
             </div>
+
+            <div class="card-actions">
+              <a href="https://prichards14.github.io/pr-styledraft/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Launch Live App</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+              <a href="https://github.com/prichards14/pr-styledraft" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary" data-open-modal="styledraft">Deep Dive</button>
+            </div>
           </div>
 
-          <div class="card-actions">
-            <a href="https://prichards14.github.io/pr-styledraft/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <span>Launch Live App</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-            <a href="https://github.com/prichards14/pr-styledraft" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <span>GitHub</span>
-            </a>
-            <button class="btn btn-secondary" data-open-modal="styledraft">Deep Dive</button>
+          <div class="card-preview-interactive">
+            <div class="interactive-demo-box">
+              <div style="font-size: 0.8125rem; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--accent-amber); font-weight: 600;">⚡ Gemini API Integration</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; background: var(--btn-secondary-bg); padding: 2px 8px; border-radius: var(--radius-pill); border: 1px solid var(--color-border);">@google/genai v2.4</span>
+                </div>
+                <div style="background: var(--btn-secondary-bg); padding: 12px 14px; border-radius: var(--radius-md); border: 1px solid var(--color-border); color: var(--color-text-primary); line-height: 1.5;">
+                  Live CSS variable injection + Typographic guardrails + Motion design handoff.
+                </div>
+                <div style="display: flex; gap: 6px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-secondary);">
+                  <span style="color: var(--accent-amber);">•</span> Dynamic Color Harmonization
+                  <span style="color: var(--accent-amber);">•</span> Clean Developer Handoff
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- ================= CARD 5: SUBLEQ OISC Simulator (Third Card) ================= -->
-        <article class="project-card third-card glow-rose" data-category="claude systems">
+        <!-- ================= CARD 5: SUBLEQ OISC Simulator ================= -->
+        <article class="project-card featured-card glow-rose" data-category="claude systems">
           <div>
             <div class="card-header">
               <span class="ai-badge">
@@ -401,7 +399,32 @@
               A simulator for a minimal Turing-complete computer running a single universal instruction: <code>mem[B] -= mem[A]; if mem[B] &le; 0 goto C</code>. Proves computation without opcode decoding. Features delta-based output registers to eliminate LED screen flickering.
             </p>
 
-            <!-- Interactive Live SUBLEQ Stepper Widget -->
+            <div class="prompt-callout">
+              <span class="prompt-label">The Architectural Prompt</span>
+              "Build an in-browser simulator for a One Instruction Set Computer (OISC) implementing the universal SUBLEQ architecture: mem[B] -= mem[A]; if (mem[B] &le; 0) goto C. Include a 256-byte memory grid, Knight Rider LED bounce, and delta-based outputs to eliminate display flickering."
+            </div>
+
+            <div class="tech-pills">
+              <span class="tech-pill">SUBLEQ OISC</span>
+              <span class="tech-pill">Hardware Simulation</span>
+              <span class="tech-pill">TypedArrays</span>
+              <span class="tech-pill">Systems Architecture</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://prichards14.github.io/prdev-oisc/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Launch Live App</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+              <a href="https://github.com/prichards14/prdev-oisc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary" data-open-modal="oisc">Deep Dive</button>
+            </div>
+          </div>
+
+          <div class="card-preview-interactive">
             <div class="interactive-demo-box">
               <div class="oisc-widget">
                 <div class="oisc-screen">
@@ -419,29 +442,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="tech-pills" style="margin-top: 1rem;">
-              <span class="tech-pill">SUBLEQ OISC</span>
-              <span class="tech-pill">Hardware Simulation</span>
-              <span class="tech-pill">TypedArrays</span>
-              <span class="tech-pill">Systems Architecture</span>
-            </div>
-          </div>
-
-          <div class="card-actions">
-            <a href="https://prichards14.github.io/prdev-oisc/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <span>Launch Live App</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-            <a href="https://github.com/prichards14/prdev-oisc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <span>GitHub</span>
-            </a>
-            <button class="btn btn-secondary" data-open-modal="oisc">Deep Dive</button>
           </div>
         </article>
 
-        <!-- ================= CARD 6: Sequential Exercise Timer (Third Card) ================= -->
-        <article class="project-card third-card glow-cyan" data-category="gemini tools">
+        <!-- ================= CARD 6: Sequential Exercise Timer ================= -->
+        <article class="project-card featured-card glow-cyan" data-category="gemini tools">
           <div>
             <div class="card-header">
               <span class="ai-badge">
@@ -458,40 +463,46 @@
               Created in Google AI Studio using Gemini. Multi-phase workout sequencing with prepare intervals, countdowns, synthesized audio ticks via Web Audio API oscillators, Screen Wake Lock API to prevent mobile sleep, and standalone HTML export.
             </p>
 
-            <!-- Live Timer Widget -->
-            <div class="interactive-demo-box">
-              <div style="display: flex; flex-direction: column; gap: 8px;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                  <span id="timer-phase" style="font-size: 0.75rem; font-weight: 700; color: #ff9500;">PREPARE</span>
-                  <span id="timer-countdown" style="font-size: 1.5rem; font-weight: 700; color: var(--color-text-primary); font-family: var(--font-mono);">00:10</span>
-                </div>
-                <div style="display: flex; gap: 6px;">
-                  <button id="timer-toggle-btn" class="oisc-btn" style="flex:1;">Start</button>
-                  <span style="font-size: 0.6875rem; color: var(--color-text-secondary); align-self: center;">Wake Lock: Active</span>
-                </div>
-              </div>
+            <div class="prompt-callout">
+              <span class="prompt-label">The Architectural Prompt</span>
+              "Build a mobile-ready PWA for sequential exercise routines with 10-second Prepare intervals, configurable work countdowns, Web Audio API synthesized sound, and Screen Wake Lock to prevent display sleep during workouts."
             </div>
 
-            <div class="tech-pills" style="margin-top: 1rem;">
+            <div class="tech-pills">
               <span class="tech-pill">Google AI Studio</span>
               <span class="tech-pill">React &amp; TypeScript</span>
               <span class="tech-pill">Web Audio API</span>
               <span class="tech-pill">Screen Wake Lock</span>
               <span class="tech-pill">Offline PWA</span>
             </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/prichards14/prdev-routines" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub Repo</span>
+              </a>
+              <button class="btn btn-secondary" data-open-modal="routines">Deep Dive</button>
+            </div>
           </div>
 
-          <div class="card-actions">
-            <a href="https://github.com/prichards14/prdev-routines" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span>GitHub Repo</span>
-            </a>
-            <button class="btn btn-secondary" data-open-modal="routines">Deep Dive</button>
+          <div class="card-preview-interactive">
+            <div class="interactive-demo-box">
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                  <span id="timer-phase" style="font-size: 0.75rem; font-weight: 700; color: #ff9500; letter-spacing: 0.05em;">PREPARE</span>
+                  <span id="timer-countdown" style="font-size: 1.75rem; font-weight: 700; color: var(--color-text-primary); font-family: var(--font-mono);">00:10</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <button id="timer-toggle-btn" class="oisc-btn" style="flex:1;">Start</button>
+                  <span style="font-size: 0.6875rem; color: var(--color-text-secondary); background: var(--btn-secondary-bg); padding: 4px 8px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">Wake Lock: Active</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- ================= CARD 7: Fractals Suite (Third Card) ================= -->
-        <article class="project-card third-card glow-purple" data-category="claude graphics">
+        <!-- ================= CARD 7: Fractals Suite ================= -->
+        <article class="project-card featured-card glow-purple" data-category="claude graphics">
           <div>
             <div class="card-header">
               <span class="ai-badge">
@@ -508,34 +519,42 @@
               A suite of three standalone high-performance mathematical visualizers: interactive complex-plane Mandelbrot zoomer, Barnsley Fern via stochastic affine transformation probabilities (IFS), and recursive space-filling Hilbert curve.
             </p>
 
-            <div class="interactive-demo-box" style="display: flex; flex-direction: column; gap: 6px;">
-              <a href="https://prichards14.github.io/prdev-fractals/Mandelbrot.html" target="_blank" style="color: var(--accent-purple); display: flex; justify-content: space-between; font-size: 0.8125rem;">
-                <span>1. Mandelbrot Explorer</span>
-                <span>Launch ↗</span>
-              </a>
-              <a href="https://prichards14.github.io/prdev-fractals/Barnsley.html" target="_blank" style="color: var(--accent-emerald); display: flex; justify-content: space-between; font-size: 0.8125rem;">
-                <span>2. Barnsley Fern (IFS)</span>
-                <span>Launch ↗</span>
-              </a>
-              <a href="https://prichards14.github.io/prdev-fractals/Hilbert.html" target="_blank" style="color: var(--accent-cyan); display: flex; justify-content: space-between; font-size: 0.8125rem;">
-                <span>3. Hilbert Space Curve</span>
-                <span>Launch ↗</span>
-              </a>
+            <div class="prompt-callout">
+              <span class="prompt-label">The Architectural Prompt</span>
+              "Develop three standalone mathematical visualizers: an interactive Mandelbrot zoomer with smooth iteration coloring, Barnsley Fern via stochastic Iterated Function Systems (IFS), and recursive Hilbert space-filling curve."
             </div>
 
-            <div class="tech-pills" style="margin-top: 1rem;">
+            <div class="tech-pills">
               <span class="tech-pill">HTML5 Canvas</span>
               <span class="tech-pill">Iterated Function Systems</span>
               <span class="tech-pill">L-Systems</span>
               <span class="tech-pill">Complex Math</span>
             </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/prichards14/prdev-fractals" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub Repo</span>
+              </a>
+              <button class="btn btn-secondary" data-open-modal="fractals">Deep Dive</button>
+            </div>
           </div>
 
-          <div class="card-actions">
-            <a href="https://github.com/prichards14/prdev-fractals" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <span>GitHub Repo</span>
-            </a>
-            <button class="btn btn-secondary" data-open-modal="fractals">Deep Dive</button>
+          <div class="card-preview-interactive">
+            <div class="interactive-demo-box" style="display: flex; flex-direction: column; gap: 8px;">
+              <a href="https://prichards14.github.io/prdev-fractals/Mandelbrot.html" target="_blank" style="color: var(--accent-purple); display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem; padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--btn-secondary-bg); text-decoration: none;">
+                <span style="font-weight: 500;">1. Mandelbrot Explorer</span>
+                <span style="font-size: 0.75rem;">Launch ↗</span>
+              </a>
+              <a href="https://prichards14.github.io/prdev-fractals/Barnsley.html" target="_blank" style="color: var(--accent-emerald); display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem; padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--btn-secondary-bg); text-decoration: none;">
+                <span style="font-weight: 500;">2. Barnsley Fern (IFS)</span>
+                <span style="font-size: 0.75rem;">Launch ↗</span>
+              </a>
+              <a href="https://prichards14.github.io/prdev-fractals/Hilbert.html" target="_blank" style="color: var(--accent-cyan); display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem; padding: 8px 10px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--btn-secondary-bg); text-decoration: none;">
+                <span style="font-weight: 500;">3. Hilbert Space Curve</span>
+                <span style="font-size: 0.75rem;">Launch ↗</span>
+              </a>
+            </div>
           </div>
         </article>
 
