@@ -301,6 +301,30 @@ function initTimerWidget() {
    5. Project Deep Dive Modal Dialog
    ========================================================================== */
 const PROJECT_DATABASE = {
+  'python-tutor': {
+    title: 'Python for Senior Engineers',
+    tagline: '14-Day Accelerated Curriculum, Assessment Engine & In-Browser Python 3.12 WebAssembly Playground',
+    aiModel: 'Google Antigravity / Gemini Pro',
+    liveUrl: 'https://prichards14.github.io/python-tutor/',
+    repoUrl: 'https://github.com/prichards14/python-tutor',
+    image: 'assets/images/python-tutor-screenshot.jpg',
+    prompt: `Architect an intensive 14-day accelerated curriculum and interactive Single-Page Application (SPA) designed specifically for senior software engineers transitioning to Python from C64 BASIC, C & Modula-2, and enterprise C# & JavaScript.
+Requirements:
+1. Mental Model Bridges: Map C# LINQ, tasks, and memory models directly to Python's object model, dunder protocols, and the GIL.
+2. High-Performance Data Processing: Comprehensive units on list/generator comprehensions, streaming pipelines, file/JSON/CSV I/O, and vectorization with Pandas & Polars.
+3. Web API Engineering: Asynchronous HTTP clients with httpx and production-grade async APIs with FastAPI and Pydantic v2.
+4. Embedded Python 3.12 Playground: In-browser code execution powered by Pyodide (WebAssembly) with stdout capture and execution timing.
+5. Mastery Assessment Engine: 112 questions across 14 sections requiring ≥80% pass score, with explanations for "Why Senior Engineers Get This Wrong".
+6. LocalStorage progress persistence, JSON export/import, and certificate generation upon completion.`,
+    architecture: [
+      'Tailored Senior Engineering Curriculum: Translates low-level memory (C64/C/Modula-2) and enterprise type systems (C#/.NET) into Pythonic idioms without introductory fluff.',
+      'In-Browser Pyodide WebAssembly Engine: Runs full Python 3.12 execution in a browser sandbox, streaming standard output, stderr, and execution benchmarks with zero local installation.',
+      'Comprehensive 112-Question Assessment System: Enforces ≥80% passing threshold with detailed senior trap analyses, retake capabilities, and persistent progress tracking.',
+      'Production-Grade Modern Tech Stack: Built with React 19, TypeScript, and Tailwind CSS v4 as a zero-backend SPA deployed seamlessly to GitHub Pages.',
+      'Progress Portability & Certification: LocalStorage tracking with JSON import/export and dynamic printable Certificate of Achievement upon completion.'
+    ],
+    techStack: ['Google Antigravity', 'Gemini Pro', 'React 19', 'TypeScript', 'Pyodide (WebAssembly)', 'Python 3.12', 'Tailwind CSS v4', 'FastAPI & Pydantic v2', 'Vite']
+  },
   'c64-sprite-studio': {
     title: 'Commodore 64 Sprite Studio',
     tagline: 'Authentic VIC-II Hardware Sprite Editor & BASIC V2 Generator',
