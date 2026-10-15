@@ -559,6 +559,94 @@
     text-wrap: balance;
   }
 
+  .hero-name {
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-avatar-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.35rem;
+    position: relative;
+  }
+
+  .hero-avatar {
+    width: clamp(120px, 95px + 5vw, 155px);
+    height: clamp(120px, 95px + 5vw, 155px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.22), 0 0 0 1px var(--color-border), 0 0 35px -5px hsla(var(--glow-cyan-raw), 0.25);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  }
+
+  [data-theme="dark"] .hero-avatar {
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.65), 0 0 0 1px var(--color-border), 0 0 40px -5px hsla(var(--glow-cyan-raw), 0.35);
+  }
+
+  .hero-avatar:hover {
+    transform: scale(1.04);
+    box-shadow: 0 16px 40px -6px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--color-border-hover), 0 0 50px -5px hsla(var(--glow-cyan-raw), 0.45);
+  }
+
+  .hero-subheading {
+    font-size: clamp(1.4rem, 1.15rem + 1.5vw, 2.35rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+    text-wrap: balance;
+  }
+
+  .hero-contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-contact-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.95rem;
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .hero-contact-pill svg {
+    flex-shrink: 0;
+    color: var(--accent-cyan);
+    transition: color var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .hero-contact-pill:hover {
+    color: var(--color-text-primary);
+    background: var(--color-surface-hover);
+    border-color: var(--color-border-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-contact-pill:hover svg {
+    color: var(--color-text-primary);
+    transform: scale(1.1);
+  }
+
   .hero-gradient-text {
     background: var(--hero-gradient);
     -webkit-background-clip: text;
