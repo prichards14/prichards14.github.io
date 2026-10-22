@@ -301,6 +301,29 @@ function initTimerWidget() {
    5. Project Deep Dive Modal Dialog
    ========================================================================== */
 const PROJECT_DATABASE = {
+  'magic-square': {
+    title: 'Magic Square Puzzle & TypeScript Architecture',
+    tagline: 'Interactive 3×3 Mathematical Matrix, Pure-Logic Game Engine & Strict TypeScript Learning SPA',
+    aiModel: 'Google Antigravity / Gemini Pro',
+    liveUrl: 'https://prichards14.github.io/magic-square/',
+    repoUrl: 'https://github.com/prichards14/magic-square',
+    image: 'assets/images/magic-square-screenshot.jpg',
+    prompt: `Architect an educational 3×3 Magic Square puzzle SPA in strict TypeScript using Vite and Vitest.
+Requirements:
+1. Pure Domain Logic: Decouple mathematical logic, line sum calculations, and win-condition validations into pure, side-effect-free functions with 100% Vitest unit test coverage.
+2. Type-Safe Architecture: Model board states with readonly interfaces, type unions, and immutable arrays without 'any'.
+3. Multiple Game Modes: Support Free Play (blank grid), Easy (4 pre-filled starter numbers), and Medium (2 starter numbers) with locked-cell invariants.
+4. Real-Time Telemetry: Provide continuous line sum badges with visual indicators for valid (15), exceeded (>15), and incomplete lines.
+5. Interactive Helpers & Keyboard Navigation: Smart next-move hint deduction engine, undo history stack, arrow-key grid navigation, and number pad input.`,
+    architecture: [
+      'Pure Mathematical Core: Zero-DOM domain engine (src/logic.ts) handling magic constant verification (M = 15), center-cell invariant checks (cell 4 must equal 5), and hint generation.',
+      'Comprehensive Vitest Test Suite: Rapid unit testing validating row/column/diagonal sums, puzzle generation, duplicate detection, and win predicate edge cases.',
+      'Strict TypeScript Typing: Clean separation between type aliases for primitives/unions (CellValue, GameMode) and interface definitions for structured contracts (LineSum, GameState).',
+      'Accessible Multimodal Input: Seamless hybrid control supporting mouse, touch tap, number bank selection, and full keyboard navigation (arrow keys, 1-9 digit placement, undo, escape).',
+      'Zero-Framework Production Build: Bundled with Vite and compiled via tsc into ultra-lightweight, high-speed static assets deployed to GitHub Pages.'
+    ],
+    techStack: ['Google Antigravity', 'Gemini Pro', 'TypeScript (Strict)', 'Vite', 'Vitest', 'Pure Functions', 'CSS Grid & Custom Properties']
+  },
   'python-tutor': {
     title: 'Python for Senior Engineers',
     tagline: '14-Day Accelerated Curriculum, Assessment Engine & In-Browser Python 3.12 WebAssembly Playground',
